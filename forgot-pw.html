@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهاشمي |  كلمة المرور </title>
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/new-pw.css">
+</head>
+<body>
+    <div class="loader ">
+        <div class="circle"></div>
+        <div class="circle-text">
+            جاري تجهيز طلبك
+        </div>
+    </div>
+    <section class="renew-pw">
+        <div class="right-section">
+            <div class="logo">
+                <a href="./index.html"><img src="./imgs/Logo.png" alt=""></a>
+             </div>
+            <div class="renew-pw-div">
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                <h1>نسيت كلمة المرور ؟</h1>
+                <p>أدخل البريد الإلكتروني المسجل لدينا لاستعادة حسابك</p>
+                    <form action="" id="renew-pw-form" class="verify-code-form">
+                        <div class="feild">
+                            <label for="pw-new">البريد الإلكتروني</label>
+                            <div class="pw-div">
+                                <input type="email" name="pw-new" id="pw-new" placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+                        </div>
+                    <button id="verify" type="submit">إرسال رمز الاستعادة</button>
+                </form>
+            </div>
+        </div>
+        <div class="left-section">
+            <img src="./imgs/Background.png" alt="">
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        const password = document.getElementById('password');
+        const toggle = document.getElementById('toggle');
+        function show(){
+            if(password.type === 'password'){
+                password.setAttribute('type' , 'text');
+    
+            }else{
+                password.setAttribute('type' , 'password');
+            }
+        }
+    
+    </script>
+    <script src="./js/master.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+@font-face {
+    font-family: NeoSansArabic ;
+    src: url(../fonts/alfont_com_AlFont_com_NeoSansArabic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NeoSansArabic', 'sans-serif';
+    direction: rtl;
+}
+:root{
+    --main-color: #39B54A;
+    --second-color: #333333;
+    --bg-color: #eaebed;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+    --padding : 40px
+}
+
+/* Start Global */
+
+p {
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title .flex-title {
+  display: flex;
+}
+
+.main-title i {
+  margin-left: 10px;
+  color: var(--main-color);
+  font-size: 28px;
+}
+
+.section-title {
+  text-align: right;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+
+.main-title a {
+  color: var(--gray-color);
+}
+
+/* End Global */
+
+.login-body {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.login-body .right-section {
+    position: relative;
+    width: 50%;
+    text-align: right;
+}
+.login-body .right-section .login{
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+.login-body .right-section .logo{
+    margin: 10px 30px;
+}
+
+.login-body .right-section .login h1 {
+    margin-top: 40px;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.login-body .right-section .login p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--black-color);
+}
+
+.login-body .right-section .forms-login .btns-forms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.login-body .right-section .forms-login .btns-forms button {
+    padding: 40px 20px 10px;
+    border: none;
+    outline: none;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.login-body .right-section .forms-login .feild label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.login-body .right-section .forms-login .feild input {
+    font-size: 15px;
+    display: block;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.login-body .right-section .forms-login .feild span {
+    color: var(--gray-color);
+    font-size: 12px;
+}
+
+.login-body .right-section .forms-login .pw-div {
+    position: relative;
+}
+
+.login-body .right-section .forms-login .pw-div i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 12px;
+    color: var(--gray-color);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.login-body .right-section .forms-login .forget-pw {
+    color: var(--gray-color);
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-body .right-section .forms-login button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.login-body .right-section .forms-login button#login-google-submit {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--bg-color);
+}
+
+.login-body .right-section .forms-login button#login-google-submit div,
+.login-body .right-section .forms-login button#login-phone-submit div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.login-body .right-section .forms-login button img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.login-body .left-section{
+    position: relative;
+    width: 50%;
+    height: 120vh;
+}
+.login-body .left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-body .hv-acc {
+    font-size: 14px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.login-body .hv-acc span:first-child {
+    color: var(--gray-color);
+}
+.login-body .hv-acc span:last-child {
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+button.active-btn {
+    border: 1px solid var(--second-color) !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.login-body .arrow-pic {
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+#email-login {
+    display: none;
+}
+
+i.fa-arrow-right {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    padding: 8px;
+    font-size: 12px;
+    color: var(--second-color);
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #000;
+}
+@media (max-width:991px) {
+    .login-body .right-section {
+        width: 100%;
+    }
+    .login-body .right-section .logo{
+        margin: 10px 10px;
+    }
+    .left-section{
+        display: none;
+    }
+    .login-body .right-section .login{
+        width: 90%;
+    }
+}
+.sign{
+   text-align: center;
+}
+.sign a{
+    color: #000;
+    font-weight: 600;
+}
+#toggle{
+    cursor: pointer;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهاشمي | إنشاء حساب  </title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/verification-code.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle-text">
+            جاري تجهيز طلبك
+        </div>
+    </div>
+    <section class="verify-code-body">
+        <div class="right-section container">
+            <div class="logo">
+                <a href="./index.html"><img src="./imgs/Logo.png" alt=""></a>
+             </div>
+            <div class="verify-code">
+                <i class="fa-solid fa-arrow-right"></i>
+                <h1>رمز التحقق</h1>
+                <p>لقد أرسلنا لك رمز التحقق عبر الرسائل القصيرة <br>  الى رقمك<span> +966 123 456 789</span></p>
+                    <form action="" id="verification-code-signup" class="verification-code-signup">
+                        <fieldset class='number-code'>
+                            <div>
+                                <input name='code' class='code-input' placeholder="ــ" required/>
+                                <input name='code' class='code-input' placeholder="ــ" required/>
+                                <input name='code' class='code-input' placeholder="ــ" required/>
+                                <input name='code' class='code-input' placeholder="ــ" required/>
+                            </div>
+                        </fieldset>
+                        <div class="flex-count">
+                            <span> لم تحصل على رمز؟ </span>
+                            <div id="countdown"></div>
+                        </div>
+                        <button id="verify" type="submit">تحقق</button>
+                    </form>
+            </div>
+        </div>
+        <div class="left-section">
+            <img src="./imgs/Background.png" alt="">
+        </div>
+    </section>
+    <script src="./js/master.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        var timeleft = 10;
+        var downloadTimer = setInterval(function(){
+        if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = '<button id="btn-js" style="background: white; border: none; outline: none;">إعادة إرسال</button>';
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft + " ثانية";
+        }
+        timeleft -= 1;
+        }, 1000);
+    </script>
+
+    <script>
+        const inputElements = [...document.querySelectorAll('input.code-input')]
+        inputElements.forEach((ele,index)=>{
+        ele.addEventListener('keydown',(e)=>{
+            if(e.keyCode === 8 && e.target.value==='') inputElements[Math.max(0,index-1)].focus()
+        })
+        ele.addEventListener('input',(e)=>{
+            const [first,...rest] = e.target.value
+            e.target.value = first ?? '' 
+            const lastInputBox = index===inputElements.length-1
+            const didInsertContent = first!==undefined
+            if(didInsertContent && !lastInputBox) {
+            inputElements[index+1].focus()
+            inputElements[index+1].value = rest.join('')
+            inputElements[index+1].dispatchEvent(new Event('input'))
+            }
+        })
+        })
+        function onSubmit(e){
+        e.preventDefault()
+        const code = inputElements.map(({value})=>value).join('')
+        console.log(code)
+        }
+    </script>
+</body>
+</html>

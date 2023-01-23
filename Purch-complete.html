@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهاشمي | اكتمال الشراء</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/Purch-complete.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <style>
+        .navbar{
+            top:0;
+        }
+        .navbar-brand img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle-text">
+            جاري تجهيز طلبك
+        </div>
+    </div>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./imgs/Logo.png" alt=""></a>
+                <a class="continue">
+                    <h5>متابعة التسوق</h5>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+        </div>
+        </nav>
+        <!-- End Navbar -->
+        <main id="complete-cart-main" class="complete-cart-main container">
+            <Section id="main-header" class="main-header">
+                <div class="source-nav-center">
+                    <a href="" class="focus-source-center">المنتجات</a>
+                    <span>></span>
+                    <a href="" class="focus-source-center">عنوان الشحن والدفع</a>
+                    <span>></span>
+                    <a href="" class="focus-source-center-active">اكتمال الشراء</a>
+                </div>
+            </Section>
+            <div class="animation">
+                <div class="check-box">
+                    <div class="check-box-true">
+                        <div class="success-checkmark">
+                            <div class="check-icon">
+                              <span class="icon-line line-tip"></span>
+                              <span class="icon-line line-long"></span>
+                              <div class="icon-circle"></div>
+                              <div class="icon-fix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>تم الشراء بنجاح</h1>
+            <p>يمكنك متابعة تقدم الطلب وحالته من صفحة طلباتي شكراً لك
+                <br> للشراء من موقع الهاشمي</p>
+            <a href="./order-details.html" class="my-orders">طلباتي</a>
+            <a href="./index.html" class="complete">متابعة التسوق</a>
+        </main>
+
+        <script src="./js/master.js"></script>
+</body>
+</html>

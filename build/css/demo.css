@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.iti__hide {
+  display: none; }
+
+pre {
+  margin: 0 !important;
+  display: inline-block; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  background: none; }
+
+/* input, button {
+  height: 35px;
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit; }
+  input[disabled], button[disabled] {
+    background-color: #eee; } */
+
+input, select {
+  /* border: 1px solid #CCC; */
+  /* width: 250px;  */
+}
+
+::-webkit-input-placeholder {
+  color: #BBB; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #BBB;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #BBB; }
+
+button {
+  color: #000;
+ }
+  button:hover {
+    background-color: none !important;
+    border-color: none !important;
+    cursor: pointer; }
+
+#result {
+  margin-bottom: 100px; }

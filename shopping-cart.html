@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهاشمي | عنوان الشحن</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/shopping-cart.css">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+    
+    <style>
+        .navbar{
+            top:0;
+        }
+        .navbar-brand img{
+            width: 150px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle-text">
+            جاري تجهيز طلبك
+        </div>
+    </div>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./imgs/Logo.png" alt=""></a>
+            <a class="continue">
+                <h5>متابعة التسوق</h5>
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+    </div>
+    </nav>
+    <!-- End Navbar -->
+    <main id="shipping-cart-main" class="shipping-cart-main container">
+        <Section id="main-header" class="main-header">
+            <div class="source-nav-center">
+                <a href="" class="focus-source-center">المنتجات</a>
+                <span>></span>
+                <a href="" class="focus-source-center-active">عنوان الشحن والدفع</a>
+                <span>></span>
+                <a href="" class="focus-source">اكتمال الشراء</a>
+            </div>
+        </Section>
+        <h3 class="cart-title">عنوان الشحن</h3>
+        <div class="shipping-container row">
+            <div class="shipping-address col-sm-12 col-md-12 col-lg-9">
+                <form action="" id="shipping-form">
+                    <div class="address-shipping">
+                        <div class="feild">
+                            <label for="phone-input">الاسم ثلاثي كامل</label>
+                            <input type="text" name="phone-input" id="phone-input" placeholder="أدخل الاسم ثلاثي">
+                        </div>
+                        <div class="region">
+                            <div class="feild">
+                                <label for="">الدولة</label>
+                                <button id="country-select" class="country-select" type="button">اختر الدولة <i class="fa-solid fa-chevron-down"></i></button>
+                                <div class="countries" id="countries">
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                    <button class="country">
+                                        <span class="name">السعودية</span>
+                                        <span class="cont-flag"><img src="./imgs/background/sa.png" alt=""></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="feild">
+                                <label for="">المدينة</label>
+                                <button id="city-select" class="city-select" type="button">اختر المدينة <i class="fa-solid fa-chevron-down"></i></button>
+                                <div class="cities" id="cities">
+                                    <button class="country city-sa">
+                                        <span class="name">الرياض</span>
+                                    </button>
+                                    <button class="country city-sa">
+                                        <span class="name">الرياض</span>
+                                    </button>
+                                    <button class="country city-sa">
+                                        <span class="name">الرياض</span>
+                                    </button>
+                                    <button class="country city-sa">
+                                        <span class="name">الرياض</span>
+                                    </button>
+                                    <button class="country city-sa">
+                                        <span class="name">الرياض</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feild">
+                            <label for="address-shipping">العنوان</label>
+                            <input type="text" name="" id="address-shipping" placeholder="أدخل العنوان">
+                        </div>
+                        <div class="region">
+                            <div class="feild">
+                                <label for="phone-input">الهاتف</label>
+                                <input id="phone" name="phone-login-input" type="tel" placeholder="أدخل رقم الهاتف">
+                            </div>
+                            <div class="feild">
+                                <label for="zip-code">الرمز البريدي - Zip Code</label>
+                                <input type="number" id="zip-code" name="zip-code" placeholder="أدخل الرمز البريدي">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="cards">
+                        <h3 class="cart-title">اختر خيارات الشحن الخاصة بك</h3>
+                        <div class="feild">
+                            <input type="radio" id="virtul-ship" value="virtul-ship" name="ship">
+                            <div class="flex-info">
+                                <label for="virtul-ship">20 ر.س - الشحن الافتراضي القياسي</label>
+                                <span>من المتوقع أن تصل الطلبات بعد يوم السبت 1 أكتوبر</span>    
+                            </div>
+                        </div>
+                        <div class="feild">
+                            <input type="radio" id="speed-ship" value="speed-ship" name="ship">
+                            <div class="flex-info">
+                                <label for="speed-ship">40 ر.س الشحن السريع</label>
+                                <span>من المتوقع أن تصل الطلبات بعد يوم السبت 1 أكتوبر</span>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-name">
+                        <h3 class="cart-title">اختر طريقة الدفع</h3>
+                        <div class="payment-cards">
+                            <div class="feild">
+                                <input type="radio" id="cash" name="payment-method" value="cash">
+                                <span></span>
+                                <label for="cash">
+                                    <img src="./imgs/background/Group 10729.png" alt="">
+                                    عند الاستلام
+                                </label>
+                            </div>
+                            <div class="feild">
+                                <input type="radio" id="credit" name="payment-method" value="credit">
+                                <span></span>
+                                <label for="credit">
+                                    <img src="./imgs//background/Group 10733.png" alt="">
+                                    بطاقات الإئتمان
+                                </label>
+                            </div>
+                            <div class="feild">
+                                <input type="radio" id="mada" name="payment-method" value="mada">
+                                <span></span>
+                                <label for="mada">
+                                    <img src="./imgs/background/369106.png" alt="">
+                                    عبر مدى
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form action="" id="credit-card">
+                    <div class="feild">
+                        <label for="credit-num">الاسم ثلاثي كامل</label>
+                        <input type="text" name="credit-num" id="credit-num" placeholder="أدخل رقم البطاقة">
+                    </div>
+                    <div class="ex">
+                        <div class="feild">
+                            <label for="">تاريخ الإنتهاء</label>
+                            <div class="select-date">
+                                <select name="mo" id="mo">
+                                    <option value="month" disabled selected>الشهر</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="yy" id="yy">
+                                    <option value="year" disabled selected>السنة</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2030">2031</option>
+                                    <option value="2032">2032</option>
+                                </select>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feild">
+                        <label for="secure">رمز الأمان</label>
+                        <select type="text" id="secure" name="secure">
+                            <option value="CCV">CCV</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="total-order col-sm-12 col-md-12 col-lg-3">
+                <form action="" id="order-table">
+                    <div class="order-table-div">
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">ملخص الطلب</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>رقم الطلب</td>
+                                    <td>#9999</td>
+                                </tr>
+                                <tr>
+                                    <td>العناصر</td>
+                                    <td>300 ر.س</td>
+                                </tr>
+                                <tr>
+                                    <td>الخصم</td>
+                                    <td>0 ر.س</td>
+                                </tr>
+                                <tr>
+                                    <td>رسوم الشحن</td>
+                                    <td>20 ر.س</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="col">كود الخصم</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="coboun">
+                                        <input type="text" id="coboun-code">
+                                        <button>تطبيق</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>السعر الإجمالي</td>
+                                    <td>500 ر.س</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <button type="submit" id="order-submit"><a href="./Purch-complete.html">اتمام الطلب</a></button>
+                </form>
+            </div>
+        </div>
+    </main>
+        <!-- Start footer -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="footer-content">
+                        <div class="logo">
+                            <img src="./imgs/Logo.png" alt="" srcset="">
+                        </div>
+                        <div class="social-media">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                            </ul>
+                        </div>
+                        <p class="copy-right">جميع الحقوق محفوظة 2022</p>
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="footer-content">
+                        <div class="row">
+                            <div class="col-5">
+                                <h6>حول</h6>
+                                <ul class="info about">
+                                    <li><a href="#">معلومات عنا</a></li>
+                                    <li><a href="#">قصص شفاء</a></li>
+                                    <li><a href="#">سياسة الخصوصية</a></li>
+                                    <li><a href="#">البنود والشروط</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <h6>المتجر</h6>
+                                <ul class="info store">
+                                    <li><a href="#">رزم علاجية</a></li>
+                                    <li><a href="#">منتجات</a></li>
+                                    <li><a href="#">جديدنا</a></li>
+                                    <li><a href="#">تخفيضات</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <h6>مساعدة</h6>
+                                <ul class="info help">
+                                    <li><a href="#">مساعدة</a></li>
+                                    <li><a href="#">طلباتي</a></li>
+                                    <li><a href="#">اتصل بنا</a></li>
+                                    <li><a href="#">مركز المساعدة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="footer-content">
+                        <h1>كن علي اطلاع</h1>
+                        <p>اشترك في القائمة البريدية للعروض والمزيد!</p>
+                        <form action="" method="" class="subscribe-form">
+                            <input type="email" placeholder="أدخل بريدك الالكتروني" value="" name="">
+                            <button class="subscribe-btn-footer" type="submit">اشترك</button>
+                        </form>
+                        <ul class="info-details">
+                            <li><i class="fa-solid fa-phone-flip"></i>  +972123456789 / +972123456789</li>
+                            <li><i class="fa-solid fa-location-dot"></i>الامارات - ابو ظبي - القبًو - حوض شرق 38</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    <script src="./js/shopping-cart.js"></script>
+    <script src="build/js/intlTelInput.js"></script>
+    <script src="./js/master.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "build/js/utils.js",
+        });
+    </script>
+</body>
+</html>

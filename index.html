@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهاشمي</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle-text">
+            جاري تجهيز طلبك
+        </div>
+    </div>
+    <!-- Start Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container">
+             <div class="row top-nav">
+                <div class="clo col-sm-6 text-right">
+                    <div class="media">
+                    <span>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                     </span>
+                        <span class="phone">
+                            <img src="./imgs/call.png" alt="" srcset="">
+                            +977123456789
+                        </span>
+                    </div>
+                </div>
+                <div class="data col-sm-6 ">
+                    <span onclick="openSerch()">
+                        <img src="./imgs/search.png" alt="" srcset="">
+                        بحث
+                    </span>
+                    <span>
+                        <img src="./imgs/global.png" alt="" srcset="">
+                        العربية
+                    </span>
+                    <span>
+                        <a href="./signup.html"><img src="./imgs/user.png" alt="" srcset="">
+                        تسجيل دخول / خروج</a>
+                    </span>
+                </div>
+             </div>
+        </div>
+    </header>
+    <!-- Start Header -->
+    <!-- popup -->
+    <div class="serch-popup">
+      <div class="serch-content">
+        <div class="details">
+          <h4 class="message-popup">البحث في الهاشمي</h4>
+          <form action="" id="search-result-form">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" id="search-result-input" class="search-result-input" value="" placeholder="البحث في الهاشمي">
+          </form>
+          <button id="closeSerch" onclick="closeserch()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      </div>
+    </div>
+    <!-- End popup -->
+    <!-- Start Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img class="logo"src="./imgs/Logo.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item" >
+              <a class="nav-link active" href="./index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item sub-nav-item">
+              <a class="nav-link" href="./packages.html">رزم علاجية</a>
+              <ul class="sub-nav">
+                <li><a href="">أمراض مختلفة</a></li>
+                <li><a href="./packages-01.html">أمراض الرأس والرقبة</a></li>
+                <li><a href="">أمراض الجهاز التنفسي</a></li>
+                <li><a href="">أمراض الجهاز الهضمي</a></li>
+                <li><a href="">أمراض الدم والقلب</a></li>
+                <li><a href="">أمراض الرأس والرقبة</a></li>
+                <li><a href="">الأمراض النسائية</a></li>
+                <li><a href="">أمراض الكبد والمرارة</a></li>
+                <li><a href="">الأمراض لدى الرجال</a></li>
+                <li><a href="">أمراض العظام والمفاصل</a></li>
+                <li><a href="">الأمراض الجلدية</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./our-product.html">منتجاتنا</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./discounts.html">تخفضيات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stories.html">قصص شفاء</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">اتصل بنا</a>
+              </li>
+          </ul>
+          <div class="ask-help button" id="button" data-toggle="modal" data-target="#ask_help">
+            <i class="fa-solid fa-headset"></i>
+            <button>طلب المساعدة</button>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Main -->
+    <main class="main">
+    <section id="slider-section" class="slider-section">
+        <div class="slideshow-container" onmouseover="show()" onmouseout="hide()">
+            <div class="mySlides fade">
+                <img class="" src="./imgs/Image.png" style="width:100%" class="d-block">
+            </div>
+            <div class="mySlides fade">
+                <img src="./imgs/01.png" style="width:100%" class="d-block">
+            </div>
+            <div class="mySlides fade">
+                <img src="./imgs/02.png" style="width:100%" class="d-block">
+            </div>
+            <a class="prev"  onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next"  onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center" class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-5">
+                <div class="col">
+                    <a class="feature">
+                        <img src="./imgs/profile-2user.png" alt="" srcset="">
+                        <h3>مركز المساعدة</h3>
+                        <p>مساعدة على مدار الساعة لتجربة تسويق سلسة.</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="feature">
+                        <img src="./imgs/shield-tick.png" alt="">
+                        <h3>تسوق مع الثقة</h3>
+                        <p>تغطي سياسة حماية المشتري الخاصة بنا رحلة الشراء بالكامل.</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="feature">
+                        <img src="./imgs/truck-tick.png" alt="" srcset="">
+                        <h3>الشحن الآمن</h3>
+                        <p>نحن نشحن إلى أكثر من 5 دول والمزيد من المناطق.</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="feature">
+                        <img src="./imgs/dollar-circle.png" alt="" srcset="">
+                        <h3>قيمة عظيمة</h3>
+                        <p>نقدم أسعار تنافسية على أكثر من ألف منتج</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="feature">
+                        <img src="./imgs/card-tick.png" alt="">
+                        <h3>دفع آمن</h3>
+                        <p>ادفع مع كل دول العالم بطرق دفع آمنة</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sections" class="sections">
+        <div class="container">
+            <h1 class="section-title">الأقسام</h1>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="section">
+                        <img class="img-fluid" src="./imgs/02.png" alt="" srcset="">
+                        <div class="details">
+                            <a class="section-div">
+                                <h4>الأكثر مبيعاً</h4>
+                                <h2>للنساء الحوامل</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="section">
+                        <img class="img-fluid" src="./imgs/01.png" alt="" srcset="">
+                        <div class="details">
+                            <a class="section-div">
+                                <h4>جديد للأم</h4>
+                                <h2>علاة أمراض النساء</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="section">
+                        <img class="img-fluid" src="./imgs/03.jpeg" alt="" srcset="">
+                        <div class="details">
+                            <a class="section-div">
+                                <h4>تخفيضات على قسم</h4>
+                                <h2>أمراض الرجال</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="section">
+                        <img class="img-fluid" src="./imgs/02.png" alt="" srcset="">
+                        <div class="details">
+                            <a class="section-div">
+                                <h4>الأكثر مبيعاً</h4>
+                                <h2>عسل السدر البري</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Diseases -->
+    <section id="diseases" class="diseases">
+        <div class="container">
+            <div class="main-title">
+                <div class="flex-title">
+                    <img src="./imgs/Path 65.png" alt="">
+                    <h1 class="section-title">أقسام الأمراض</h1>
+                </div>
+                <a href="">عرض الكل</a>
+            </div>
+            <div class="slider swiper mySwiper-diseases">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-01.html">
+                            <div class="image">
+                                <img src="./imgs/diseases/BG.png" alt="">
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-01.html">
+                            <div class="image">
+                                <img src="./imgs/diseases/BG-3.png" alt="">
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-01.html">
+                            <div class="image">
+                                <img src="./imgs/diseases/BG-4.png" alt="">
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-01.html">
+                            <div class="image">
+                                <img src="./imgs/diseases/BG-6.png" alt="">
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-01.html">
+                            <div class="image">
+                                <img src="./imgs/diseases/BG-7.png" alt="">
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-01.html">
+                            <div class="image">
+                                <img src="./imgs/diseases/BG-8.png" alt="">
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-disease"></div>
+            <div class="swiper-button-prev swiper-button-prev-disease"></div>
+        </div>
+    </section>
+    <!-- End Diseases -->
+    <!-- Start Most Orders -->
+    <section id="more-orders" class="more-orders">
+        <div class="container">
+            <div class="main-title">
+                <div class="flex-title">
+                    <img src="./imgs/Path 65.png" alt="">
+                    <h1 class="section-title">الرزم الأكثر طلباً</h1>
+                </div>
+                <a href="">عرض الكل</a>
+            </div>
+            <div class="slider swiper mySwiper-order">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-details.html">
+                            <div class="image">
+                                <img src="./imgs/products/BG - Images.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>علاج أمراض الكلى بالاعشاب الطبيعية</h2>
+                                <span>10 رزمة علاجية</span>
+                                <div class="price">
+                                    <span class="package-price">250 ر.س</span>
+                                    <del class="del-price">250 ر.س</del>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-details.html">
+                            <div class="image">
+                                <img src="./imgs/products/pro2.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>طقم تصحيح صبغة الجمال</h2>
+                                <span>23 رزمة علاجية</span>
+                                <div class="price">
+                                    <span class="package-price">250 ر.س</span>
+                                    <del class="del-price">250 ر.س</del>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-details.html">
+                            <div class="image">
+                                <img src="./imgs/products/pro3.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>أمراض الكلى والمثانة</h2>
+                                <span>23 رزمة علاجية</span>
+                                <div class="price">
+                                    <span class="package-price">250 ر.س</span>
+                                    <del class="del-price">250 ر.س</del>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-details.html">
+                            <div class="image">
+                                <img src="./imgs/products/BG - Images.png">
+                            </div>
+                            <div class="details">
+                                <h2>أمراض الكلى والمثانة</h2>
+                                <span>23 رزمة علاجية</span>
+                                <div class="price">
+                                    <span class="package-price">250 ر.س</span>
+                                    <del class="del-price">250 ر.س</del>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./packages-details.html">
+                            <div class="image">
+                                <img src="./imgs/products/pro2.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>أمراض الكلى والمثانة</h2>
+                                <span>23 رزمة علاجية</span>
+                                <div class="price">
+                                    <span class="package-price">250 ر.س</span>
+                                    <del class="del-price">250 ر.س</del>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-more">
+                
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-more"></div>
+        </div>
+    </section>
+    <!-- End Most Orders -->
+    <!-- Start Most Sails -->
+    <section id="more-sails" class="more-sails">
+        <div class="container">
+            <div class="main-title">
+                <div class="flex-title">
+                    <img src="./imgs/Path 65.png" alt="">
+                    <h1 class="section-title">الأكثر مبيعاً</h1>
+                </div>
+                <a href="">عرض الكل</a>
+            </div>
+            <div class="slider swiper mySwiper-sails">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./product-details.html">
+                            <div class="image">
+                                <div class="imge">
+                                    <img src="./imgs/products/Image 11.png" alt="image1">
+                                    <img src="./imgs/products/imgpro.png" alt="image1" class="top-img">
+                                </div>
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                    <div class="price">
+                                        <span class="package-price">250 ر.س</span>
+                                        <del class="del-price">250 ر.س</del>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./product-details.html">
+                            <div class="image">
+                                <div class="imge">
+                                    <img src="./imgs/products/imgpro.png" alt="image1">
+                                    <img src="./imgs/products/Image 11.png" alt="image1" class="top-img">
+                                </div>
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                    <div class="price">
+                                        <span class="package-price">250 ر.س</span>
+                                        <del class="del-price">250 ر.س</del>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./product-details.html">
+                            <div class="image">
+                                <div class="imge">
+                                    <img src="./imgs/products/41ARJqj4IlL_1024x1024.png" alt="image1">
+                                    <img src="./imgs/products/Retinoic-Serum-box_1200x.png" alt="" class="top-img">
+                                </div>
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                    <div class="price">
+                                        <span class="package-price">250 ر.س</span>
+                                        <del class="del-price">250 ر.س</del>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./product-details.html">
+                            <div class="image">
+                                <div class="imge">
+                                    <img src="./imgs/products/Retinoic-Serum-box_1200x.png" alt="image1">
+                                    <img src="./imgs/products/41ARJqj4IlL_1024x1024.png" alt="" class="top-img">
+                                </div>
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                    <div class="price">
+                                        <span class="package-price">250 ر.س</span>
+                                        <del class="del-price">250 ر.س</del>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./product-details.html">
+                            <div class="image">
+                                <div class="imge">
+                                    <img src="./imgs/products/retinol-pic1_1500x1500.png" alt="image1">
+                                    <img src="./imgs/products/imgpro.png" alt="" class="top-img">
+
+                                </div>
+                                <div class="details">
+                                    <h2>أمراض الكلى والمثانة</h2>
+                                    <span>23 رزمة علاجية</span>
+                                    <div class="price">
+                                        <span class="package-price">250 ر.س</span>
+                                        <del class="del-price">250 ر.س</del>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-sails"></div>
+            <div class="swiper-button-prev swiper-button-prev-sails"></div>
+        </div>
+    </section>
+    <!-- End Most Salis -->
+    <!-- Start Consoltants -->
+    <section id="consoltants" class="consoltants">
+        <div class="container">
+            <div class="main-title">
+                <div class="flex-title">
+                    <img src="./imgs/icon.png" alt="" srcset="">
+                    <h1 class="section-title">المستشارين</h1>
+                </div>
+            </div>
+            <div class="slider swiper mySwiper-consoltants">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-3.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>منال عمر</h2>
+                                <span>التغذية والطب البديل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-10.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>منال عمر</h2>
+                                <span>التغذية والطب البديل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-6.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>منال عمر</h2>
+                                <span>التغذية والطب البديل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-7.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>منال عمر</h2>
+                                <span>التغذية والطب البديل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-9.png ">
+                            </div>
+                            <div class="details">
+                                <h2>منال عمر</h2>
+                                <span>التغذية والطب البديل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-5.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>منال عمر</h2>
+                                <span>التغذية والطب البديل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <img src="./imgs/doctors/BG - Images-9.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>أمراض الكلى والمثانة</h2>
+                                <span>23 رزمة علاجية</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-consoltants"></div>
+            <div class="swiper-button-prev swiper-button-prev-consoltants"></div>
+        </div>
+    </section>
+    <!-- End Most Consoltants -->
+    <!-- Start Stories -->
+    <section id="stories" class="stories">
+        <div class="container">
+            <div class="main-title">
+                <div class="flex-title">
+                    <h1 class="section-title">قصص شفاء </h1>
+                </div>
+                <a href="">عرض الكل</a>
+            </div>
+            <div class="slider swiper mySwiper-stories">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./story-details.html">
+                            <div class="image video-pic">
+                                <i class="fa-solid fa-play"></i>
+                                <img src="./imgs/stories/14_daughter_Heartwarming-True-Stories-About-Mother-Daughter-Love_367423430_Martin-Novak_FT.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="desc">
+                                    <div class="img">
+                                        <i class="fa-solid fa-square"></i>
+                                        <span>أمراض الكلى والمثانة</span>    
+                                    </div>
+                                    <div class="vid">
+                                        <i class="fa-solid fa-play"></i>
+                                        <span>فيديو</span>
+                                    </div>
+                                </div>
+                                <p>والدة EM كانت قلقة على ابنتها من الهربس فماذا حصل</p>
+                                <a href="">اقرأ القصة</a>    
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./story-details.html">
+                            <div class="image">
+                                <img src="./imgs/stories/Rectangle 4238.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="desc">
+                                    <div class="img">
+                                        <i class="fa-solid fa-square"></i>
+                                        <span>أمراض الكلى والمثانة</span>    
+                                    </div>
+                                </div>
+                                <p>والدة EM كانت قلقة على ابنتها من الهربس شاهدوا ماذا حصل</p>
+                                <a href="">اقرأ القصة</a>    
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./story-details.html">
+                            <div class="image">
+                                <img src="./imgs/stories/14_daughter_Heartwarming-True-Stories-About-Mother-Daughter-Love_367423430_Martin-Novak_FT.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="desc">
+                                    <div class="img">
+                                        <i class="fa-solid fa-square"></i>
+                                        <span>أمراض الكلى والمثانة</span>    
+                                    </div>
+                                </div>
+                                <p>والدة EM كانت قلقة على ابنتها من الهربس شاهدوا ماذا حصل</p>
+                                <a href="">اقرأ القصة</a>    
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./story-details.html">
+                            <div class="image">
+                                <img src="./imgs/story-01.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="desc">
+                                    <div class="img">
+                                        <i class="fa-solid fa-square"></i>
+                                        <span>أمراض الكلى والمثانة</span>    
+                                    </div>
+                                </div>
+                                <p>والدة EM كانت قلقة على ابنتها من الهربس شاهدوا ماذا حصل</p>
+                                <a href="">اقرأ القصة</a>    
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <a href="./story-details.html">
+                            <div class="image">
+                                <img src="./imgs/story-01.png" alt="">
+                            </div>
+                            <div class="details">
+                                <div class="desc">
+                                    <div class="img">
+                                        <i class="fa-solid fa-square"></i>
+                                        <span>أمراض الكلى والمثانة</span>    
+                                    </div>
+                                </div>
+                                <p>والدة EM كانت قلقة على ابنتها من الهربس شاهدوا ماذا حصل</p>
+                                <a href="">اقرأ القصة</a>    
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-stories"></div>
+            <div class="swiper-button-prev swiper-button-prev-stories"></div>
+        </div>
+    </section>
+    <!-- End Most Stories -->
+    <!-- Start Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="main-title">
+                <div class="flex-title">
+                    <img src="./imgs/Icon-1.png" alt="">
+                    <h1 class="section-title">آراء نفتخر بها
+                        <br>
+                        <span>قالوا عنا</span>
+                    </h1>
+                    <br>
+                </div>
+            </div>
+            <div class="slider swiper mySwiper-testimonials">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <i class="fa-solid fa-quote-right quote-pin"></i>
+                                <div class="person">
+                                    <img src="./imgs/doctors/BG - Images-6.png" alt="">
+                                    <div class="name">
+                                        <h2>أحمد محمد</h2>
+                                        <span>منذ 3 أيام</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <p>فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                        فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <i class="fa-solid fa-quote-right quote-pin"></i>
+                                <div class="person">
+                                    <img src="./imgs/doctors/BG - Images-5.png" alt="">
+                                    <div class="name">
+                                        <h2>أحمد محمد</h2>
+                                        <span>منذ 3 أيام</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <p>فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                        فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <i class="fa-solid fa-quote-right quote-pin"></i>
+                                <div class="person">
+                                    <img src="./imgs/doctors/BG - Images-3.png" alt="">
+                                    <div class="name">
+                                        <h2>أحمد محمد</h2>
+                                        <span>منذ 3 أيام</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <p>فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                        فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slid">
+                        <div class="slid-content">
+                            <div class="image">
+                                <i class="fa-solid fa-quote-right quote-pin"></i>
+                                <div class="person">
+                                    <img src="./imgs/doctors/BG - Images-10.png" alt="">
+                                    <div class="name">
+                                        <h2>أحمد محمد</h2>
+                                        <span>منذ 3 أيام</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <p>فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                        فريقكم طموح ومبدع وهذا ما شجعنا للتعامل معكم، نتمنى لكم دوام التوفيق
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="tell-us-testi" data-toggle="modal" data-target="#sending_comment">أكتب رأيك</button>
+            </div>
+        </div>
+    </section>
+  <!-- Modal -->
+    <div class="modal fade" id="sending_comment" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"> أكتب رأيك</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <div  class="image-preview" id="imagePreview">
+                    <input type="file" name="inpFile" id="inpFile">
+                    <label for="inpFile"><i class="fa-solid fa-camera"></i></label>
+                    <img src="" alt="image preview" class="image-preview__image">
+                    <span class="image-preview__default-text">
+                    </span>
+                </div>
+            <h4>الصورة الشخصية</h4>
+            <h6>(اختياري)</h6>
+            <div class="form-group">
+                <label for="ask-help-name">الاسم كامل</label>
+            <input type="text" class="form-control" id="ask-help-name" placeholder="ادخل الاسم">
+            </div>
+            <div class="form-group">
+            <label for="ask-help-email">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="ask-help-email" placeholder="ادخل البريد الالكتروني">
+            </div>
+            <div class="field">
+                <label for="help-text">رأيك</label>
+                <textarea name="help-text" id="help-text" placeholder='ضع رأيك هنا'></textarea>
+            </div>
+            <div class="btn">
+                <button id="send-help-ask" data-dismiss="modal" data-toggle="modal" data-target="#end-writing">أرسل رأيك</button>
+            </div>
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+    <div class="modal fade" id="end-writing" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">اكتب رأيك </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="animation">
+                    <div class="check-box">
+                        <div class="check-box-true">
+                            <div class="success-checkmark">
+                                <div class="check-icon">
+                                  <span class="icon-line line-tip"></span>
+                                  <span class="icon-line line-long"></span>
+                                  <div class="icon-circle"></div>
+                                  <div class="icon-fix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <h4 class="message-popup">شكراً لك على طلب المساعدة</h4>
+              <p class="message-popup">سيتم مراجعة ردك لعرضه في الهاشمي </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn bg-white" data-dismiss="modal">موافق</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Most Testimonials -->
+    <!-- Start Need Help -->
+    <section id="need-help" class="need-help">
+        <div class="container">
+            <div class="text">
+                <h2>هل تحتاج مساعدة</h2>
+                <p>يوجد فريق مختص للرد على جميع الاستفسارات</p>
+                <button class="open-btn buttonHelp"  data-toggle="modal" data-target="#ask_help"><i class="fa-solid fa-headset"></i> طلب المساعدة</button>
+            </div>
+            <div class="imgs">
+                <img src="./imgs/doctors/BG - Images-10.png" alt="">
+                <img src="./imgs/doctors/BG - Images-5.png" alt="">
+                <img src="./imgs/doctors/BG - Images-3.png" alt="">
+                <img src="./imgs/doctors/BG - Images-4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ask_help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">طلب المساعدة</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="ask-help-name">الاسم كامل</label>
+                  <input type="text" class="form-control" id="ask-help-name" placeholder="ادخل الاسم">
+                </div>
+                <div class="form-group">
+                  <label for="ask-help-email">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="ask-help-email" placeholder="ادخل البريد الالكتروني">
+                </div>
+                <div class="field">
+                    <label for="help-text">المساعدة</label>
+                    <textarea name="help-text" id="help-text" placeholder="قل لنا كيف يمكن أن نساعدك"></textarea>
+                </div>
+                <div class="attatch">
+                    <label for="">المرفقات</label>
+                    <br>
+                    <span>نقبل ملفات JPG, PNG, JPEG, PDF</span>
+                    <div class="upload">
+                        <img src="./imgs/upload-file.png" alt="">
+                        <input type="file" id="ask-help-file" name="ask-help-file">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="send-help-ask" data-dismiss="modal" data-toggle="modal" data-target="#end-help">أرسل طلب المساعدة</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="end-help" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">طلب المساعدة</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="animation">
+                <div class="check-box">
+                    <div class="check-box-true">
+                        <div class="success-checkmark">
+                            <div class="check-icon">
+                              <span class="icon-line line-tip"></span>
+                              <span class="icon-line line-long"></span>
+                              <div class="icon-circle"></div>
+                              <div class="icon-fix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <h4 class="message-popup">شكراً لك على طلب المساعدة</h4>
+          <p class="message-popup">سيتم مراجعة طلبك من قبل الفريق 
+             <br> المختص والرد على البريد الإلكتروني بأسرع
+             <br> وقت شكراً لك.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn bg-white" data-dismiss="modal">موافق</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</main>
+ 
+    <!-- Start footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="footer-content">
+                    <div class="logo">
+                        <img src="./imgs/Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="copy-right">جميع الحقوق محفوظة 2022</p>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="footer-content">
+                    <div class="row">
+                        <div class="col-5">
+                            <h6>حول</h6>
+                            <ul class="info about">
+                                <li><a href="#">معلومات عنا</a></li>
+                                <li><a href="#">قصص شفاء</a></li>
+                                <li><a href="#">سياسة الخصوصية</a></li>
+                                <li><a href="#">البنود والشروط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <h6>المتجر</h6>
+                            <ul class="info store">
+                                <li><a href="#">رزم علاجية</a></li>
+                                <li><a href="#">منتجات</a></li>
+                                <li><a href="#">جديدنا</a></li>
+                                <li><a href="#">تخفيضات</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h6>مساعدة</h6>
+                            <ul class="info help">
+                                <li><a href="#">مساعدة</a></li>
+                                <li><a href="#">طلباتي</a></li>
+                                <li><a href="#">اتصل بنا</a></li>
+                                <li><a href="#">مركز المساعدة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="footer-content">
+                    <h1>كن علي اطلاع</h1>
+                    <p>اشترك في القائمة البريدية للعروض والمزيد!</p>
+                    <form action="" method="" class="subscribe-form">
+                        <input type="email" placeholder="أدخل بريدك الالكتروني" value="" name="">
+                        <button class="subscribe-btn-footer" type="submit">اشترك</button>
+                    </form>
+                    <ul class="info-details">
+                        <li><i class="fa-solid fa-phone-flip"></i>  +972123456789 / +972123456789</li>
+                        <li><i class="fa-solid fa-location-dot"></i>الامارات - ابو ظبي - القبًو - حوض شرق 38</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- Start warapper -->
+    <div class="warapper" data-toggle="modal"  data-modal-target="#model">
+        <div class="button" onclick="shows_pop()" id="whatsapp-pop">
+            <div  class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <span>هل لديك استفسار؟</span>
+        </div>
+    </div>
+    <div class="card" id="whatsap-pop">
+    <div class="card-title">
+        <div class="card-person">
+            <img src="./imgs/background/User.png" alt="">
+            <div class="name">
+                <h2>خلود </h2>
+            </div>
+        </div>
+        <button class="btn-close" onclick="close_pop()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="card-message">
+        <div class="message">
+        <span>خلود</span>
+        <p>اهلا بك في الهاشمي <br>
+        معك خلود , بماذا يمكنني المساعدة؟</p>
+        <span>  12 : 12 pm</span>
+    </div>
+    </div>
+    <div class="card-footer">
+        <div  class="icon"><i class="fa-brands fa-whatsapp"></i>
+        <span>تحدث معي بالواتساب الان</span>
+    </div>
+    </div>
+    </div>
+    <!-- End warapper-->
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="js/master.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+       <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        function show(){
+            next.style.visibility = 'visible';
+            prev.style.visibility = 'visible';
+        }
+        function hide(){
+            next.style.visibility = 'hidden';
+            prev.style.visibility = 'hidden';
+        }
+       </script>
+    <script>
+        var swiper = new Swiper(".mySwiper-diseases", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-disease",
+          prevEl: ".swiper-button-prev-disease",
+        },
+        
+      });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper-order", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-more",
+          prevEl: ".swiper-button-prev-more",
+        },
+        
+      });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper-sails", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:4,
+        },
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next-sails",
+        prevEl: ".swiper-button-prev-sails",
+        },
+        
+    });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper-consoltants", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:5,
+        },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-consoltants",
+          prevEl: ".swiper-button-prev-consoltants",
+        },
+        
+      });
+    </script>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper-stories", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next-stories",
+        prevEl: ".swiper-button-prev-stories",
+        },
+        
+    });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper-testimonials", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        grabCursor:true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:1,
+        },
+        991:{
+            slidesPerView:2,
+        },
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next-stories",
+        prevEl: ".swiper-button-prev-stories",
+        },
+    });
+    </script>
+
+<script>
+    // Start of auto Slideshow
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display =  "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display =  "block";
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+    // End of auto Slideshow
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<script>
+        let imgDiv = document.querySelector('.profile-pic-div');
+        let img = document.querySelector('#photo');
+        let file = document.querySelector('#file');
+        let btn = document.querySelector('#uploadBtn');
+        file.addEventListener('change' , function(){
+            let chooseFile = this.file[0];
+            if(chooseFile){
+                let reader = new FileReader();
+                reader.addEventListener('load' , function(){
+                    img.setAttribute('src' , reader.result);
+                })
+                reader.readAsDataURL(chooseFile);
+            }
+        })
+</script>
+<script>
+    const inpFile = document.getElementById('inpFile');
+    const inpPreview = document.getElementById('imagePreview');
+    const previewImage = inpPreview.querySelector('.image-preview__image');
+    const previewDataText = inpPreview.querySelector('.image-preview__default-text');
+
+    inpFile.addEventListener('change' , function(){
+        const file = this.files[0];
+        if(file){
+            const reader = new FileReader();
+            previewDataText.style.display = "none";
+            previewImage.style.display = "block";
+            reader.addEventListener('load' , function(){
+                console.log(this)
+                previewImage.setAttribute('src' , this.result);
+            })
+            reader.readAsDataURL(file);
+        }else{
+                previewDataText.style.display = none;
+                previewImage.style.display = none;
+        }
+
+    })
+</script>
+</body>
+</html>

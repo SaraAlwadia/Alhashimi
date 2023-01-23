@@ -1,0 +1,130 @@
+@font-face {
+    font-family: NeoSansArabic ;
+    src: url(../fonts/alfont_com_AlFont_com_NeoSansArabic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NeoSansArabic', 'sans-serif';
+    direction: rtl;
+}
+
+
+:root{
+    --main-color: #39B54A;
+    --second-color: #333333;
+    --bg-color: #eaebed;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+    --padding : 80px
+}
+
+/* Start Global */
+
+p {
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.source-nav-center {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.source-nav-center a,
+.source-nav-center span {
+    color: var(--gray-color);
+}
+
+a.focus-source-center {
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+a.focus-source-center-active {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* Start Global */
+.products-main{
+    margin-top: 100px;
+}
+
+
+.continue {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.continue:hover {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.continue i {
+    margin-right: 6px;
+}
+
+.products-count {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.products-main {
+    text-align: right;
+}
+
+.complete-cart-main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.complete-cart-main h1{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.complete-cart-main .my-orders , .complete{
+    min-width: 30%;
+    height: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #000;
+}
+.complete-cart-main .my-orders{
+    background-color: var(--main-color);
+    color: #fff;
+    margin: 20px 0;
+}

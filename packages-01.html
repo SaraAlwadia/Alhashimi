@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الهاشمي | رزم علاجية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/packages01.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle-text">
+            جاري تجهيز طلبك
+        </div>
+    </div>
+    <!-- Start Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container">
+             <div class="row top-nav">
+                <div class="clo col-sm-6 text-right">
+                    <div class="media">
+                    <span>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                     </span>
+                        <span class="phone">
+                            <img src="./imgs/call.png" alt="" srcset="">
+                            +977123456789
+                        </span>
+                    </div>
+                </div>
+                <div class="data col-sm-6 ">
+                    <span onclick="openSerch()">
+                        <img src="./imgs/search.png" alt="" srcset="">
+                        بحث
+                    </span>
+                    <span>
+                        <img src="./imgs/global.png" alt="" srcset="">
+                        العربية
+                    </span>
+                    <span>
+                        <a href="./signup.html"><img src="./imgs/user.png" alt="" srcset="">
+                            تسجيل دخول / خروج</a>
+                    </span>
+                </div>
+             </div>
+        </div>
+    </header>
+    <!-- Start Header -->
+        <!-- popup -->
+        <div class="serch-popup">
+            <div class="serch-content">
+              <div class="details">
+                <h4 class="message-popup">البحث في الهاشمي</h4>
+                <form action="" id="search-result-form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="search-result-input" class="search-result-input" value="" placeholder="البحث في الهاشمي">
+                </form>
+                <button id="closeSerch" onclick="closeserch()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            </div>
+          </div>
+          <!-- End popup -->
+    <!-- Start Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img class="logo"src="./imgs/Logo.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item" >
+              <a class="nav-link" href="./index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item sub-nav-item">
+              <a class="nav-link active" href="./packages.html">رزم علاجية</a>
+              <ul class="sub-nav">
+                <li><a href="">أمراض مختلفة</a></li>
+                <li><a href="./packages-01.html">أمراض الرأس والرقبة</a></li>
+                <li><a href="">أمراض الجهاز التنفسي</a></li>
+                <li><a href="">أمراض الجهاز الهضمي</a></li>
+                <li><a href="">أمراض الدم والقلب</a></li>
+                <li><a href="">أمراض الرأس والرقبة</a></li>
+                <li><a href="">الأمراض النسائية</a></li>
+                <li><a href="">أمراض الكبد والمرارة</a></li>
+                <li><a href="">الأمراض لدى الرجال</a></li>
+                <li><a href="">أمراض العظام والمفاصل</a></li>
+                <li><a href="">الأمراض الجلدية</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./our-product.html">منتجاتنا</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./discounts.html">تخفضيات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./stories.html">قصص شفاء</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">اتصل بنا</a>
+              </li>
+          </ul>
+          <div class="ask-help button" id="button" data-toggle="modal" data-target="#ask_help">
+            <i class="fa-solid fa-headset"></i>
+            <button>طلب المساعدة</button>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <!-- End Navbar -->
+	<main id="our-product-main" class="our-product-main">
+		<Section id="main-header" class="main-header">
+            <div class="container">
+                <div class="source-nav">
+                    <a href="">الرئيسية</a>
+                    <span>/</span>
+                    <a href="">رزم علاجية</a>
+                    <span>/</span>
+                    <a href="" class="focus-source">أمراض الرأس والرقبة</a>
+                </div>
+                <div class="header-bannar">
+                    <img src="./imgs/Group 10761.png" class="header-img" alt="">
+                    <div class="details">
+                        <p>رزم علاجية</p>
+                        <h2>أمراض الرأس والرقبة</h2>
+                        <p>التصلب اللويحي, السكتة الدماغية, الباركنسون, اللقوة,فرط الحركة وقلة التركيز ,الغدة
+                            <br> الدرقية, طنين الاذن, الصداع النصفي, القلق, تساقط الشعر وغيرها.</p>
+                    </div>
+                </div>
+            </div>
+        </Section>
+		<div class="flex-title container">
+            <h2 class="indicator">المنتجات <span>200 منتج</span></h2>
+            <ul class="indicator">
+			</ul>
+            <div class="filter-condition">
+                <select name="" id="select">
+                    <option value="Default">الترتيب حسب: المضاف حديثاً</option>
+                    <option value="LowToHigh">الترتيب حسب السعر: من الأقل</option>
+                    <option value="HighToLow">الترتيب حسب السعر: من الأعلى</option>
+                </select>
+            </div>
+        </div>
+		<div class="product-field">
+            <div class="container">
+			<ul class="items row">
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG - Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<del>50.78 ر.س</del>
+					<span class="prod-price">$45.78</span>
+                    </a>
+				</li>
+				<li  class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG2- Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$35.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/pro2.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$40.78</span>
+                    </a>
+				</li>
+				<li  class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG3- Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$42.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG4 - Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$46.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG 5- Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$55.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG 5- Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$25.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG - Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$20.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG2- Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$15.78</span>
+                    </a>
+				</li>
+				<li  class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG - Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$22.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/BG2- Images.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$33.78</span>
+                    </a>
+				</li>
+				<li class="col-sm-6 col-md-4 col-lg-4" data-category="" data-price="">
+                    <a href="./product-details.html">
+					<img src="./imgs/products/pro2.png" alt="">
+					<div class="detail">
+						<strong>علاج حصى الكلى بالأعشاب الطبيعية</strong>
+                        <span>العظام والمفاصل</span>
+					</div>
+					<span class="prod-price">$44.78</span>
+                    </a>
+				</li>
+			</ul>
+            </div>
+		</div>
+	</main>
+    <!-- Start footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="footer-content">
+                    <div class="logo">
+                        <img src="./imgs/Logo.png" alt="" srcset="">
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="copy-right">جميع الحقوق محفوظة 2022</p>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="footer-content">
+                    <div class="row">
+                        <div class="col-5">
+                            <h6>حول</h6>
+                            <ul class="info about">
+                                <li><a href="#">معلومات عنا</a></li>
+                                <li><a href="#">قصص شفاء</a></li>
+                                <li><a href="#">سياسة الخصوصية</a></li>
+                                <li><a href="#">البنود والشروط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <h6>المتجر</h6>
+                            <ul class="info store">
+                                <li><a href="#">رزم علاجية</a></li>
+                                <li><a href="#">منتجات</a></li>
+                                <li><a href="#">جديدنا</a></li>
+                                <li><a href="#">تخفيضات</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h6>مساعدة</h6>
+                            <ul class="info help">
+                                <li><a href="#">مساعدة</a></li>
+                                <li><a href="#">طلباتي</a></li>
+                                <li><a href="#">اتصل بنا</a></li>
+                                <li><a href="#">مركز المساعدة</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="footer-content">
+                    <h1>كن علي اطلاع</h1>
+                    <p>اشترك في القائمة البريدية للعروض والمزيد!</p>
+                    <form action="" method="" class="subscribe-form">
+                        <input type="email" placeholder="أدخل بريدك الالكتروني" value="" name="">
+                        <button class="subscribe-btn-footer" type="submit">اشترك</button>
+                    </form>
+                    <ul class="info-details">
+                        <li><i class="fa-solid fa-phone-flip"></i>  +972123456789 / +972123456789</li>
+                        <li><i class="fa-solid fa-location-dot"></i>الامارات - ابو ظبي - القبًو - حوض شرق 38</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+      <!-- Modal -->
+  <div class="modal fade" id="ask_help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">طلب المساعدة</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="ask-help-name">الاسم كامل</label>
+                  <input type="text" class="form-control" id="ask-help-name" placeholder="ادخل الاسم">
+                </div>
+                <div class="form-group">
+                  <label for="ask-help-email">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="ask-help-email" placeholder="ادخل البريد الالكتروني">
+                </div>
+                <div class="field">
+                    <label for="help-text">المساعدة</label>
+                    <textarea name="help-text" id="help-text" placeholder="قل لنا كيف يمكن أن نساعدك"></textarea>
+                </div>
+                <div class="attatch">
+                    <label for="">المرفقات</label>
+                    <br>
+                    <span>نقبل ملفات JPG, PNG, JPEG, PDF</span>
+                    <div class="upload">
+                        <img src="./imgs/upload-file.png" alt="">
+                        <input type="file" id="ask-help-file" name="ask-help-file">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="send-help-ask" data-dismiss="modal" data-toggle="modal" data-target="#end-help">أرسل طلب المساعدة</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="end-help" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">طلب المساعدة</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="animation">
+                <div class="check-box">
+                    <div class="check-box-true">
+                        <div class="success-checkmark">
+                            <div class="check-icon">
+                              <span class="icon-line line-tip"></span>
+                              <span class="icon-line line-long"></span>
+                              <div class="icon-circle"></div>
+                              <div class="icon-fix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <h4 class="message-popup">شكراً لك على طلب المساعدة</h4>
+          <p class="message-popup">سيتم مراجعة طلبك من قبل الفريق 
+             <br> المختص والرد على البريد الإلكتروني بأسرع
+             <br> وقت شكراً لك.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn bg-white" data-dismiss="modal">موافق</button>
+          </div>
+      </div>
+    </div>
+  </div>
+	<!-- Start warapper -->
+	<div class="warapper" data-toggle="modal"  data-modal-target="#model">
+		<div class="button" onclick="shows_pop()" id="whatsapp-pop">
+			<div  class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+			<span>هل لديك استفسار؟</span>
+		</div>
+	</div>
+	<div class="card" id="whatsap-pop">
+	<div class="card-title">
+		<div class="card-person">
+			<img src="./imgs/background/User.png" alt="">
+			<div class="name">
+				<h2>خلود </h2>
+			</div>
+		</div>
+		<button class="btn-close" onclick="close_pop()">
+			<i class="fa-solid fa-xmark"></i>
+		</button>
+	</div>
+	<div class="card-message">
+		<div class="message">
+		<span>خلود</span>
+		<p>اهلا بك في الهاشمي <br>
+		معك خلود , بماذا يمكنني المساعدة؟</p>
+		<span>  12 : 12 pm</span>
+	</div>
+	</div>
+	<div class="card-footer">
+		<div  class="icon"><i class="fa-brands fa-whatsapp"></i>
+		<span>تحدث معي بالواتساب الان</span>
+	</div>
+	</div>
+	</div>
+	<!-- End warapper-->
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/our-products.js"></script>
+<script src="./js/master.js"></script>

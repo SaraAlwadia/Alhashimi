@@ -1,0 +1,400 @@
+@font-face {
+    font-family: NeoSansArabic ;
+    src: url(../fonts/alfont_com_AlFont_com_NeoSansArabic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'NeoSansArabic', 'sans-serif';
+    direction: rtl;
+}
+
+
+:root{
+    --main-color: #39B54A;
+    --second-color: #333333;
+    --bg-color: #eaebed;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+    --padding : 80px
+}
+
+/* Start Global */
+
+p {
+    font-size: 16px;
+    color: var(--gray-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.source-nav-center {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.source-nav-center a,
+.source-nav-center span {
+    color: var(--gray-color);
+}
+
+a.focus-source-center {
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+a.focus-source-center-active {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* Start Global */
+.shipping-cart-main{
+    margin-top: 100px;
+}
+.cart-title {
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.continue {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.continue:hover {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.continue i {
+    margin-right: 6px;
+}
+
+.products-count {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.products-main {
+    text-align: right;
+}
+
+.products-count {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.shipping-cart-main .shipping-container {
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    text-align: right;
+}
+
+.shipping-cart-main .shipping-container form#shipping-form {
+    width: 100%;
+}
+
+.shipping-cart-main .shipping-container form#shipping-form .address-shipping .feild label {
+    display: block;
+}
+
+.shipping-cart-main .shipping-container form#shipping-form .address-shipping .feild input,
+.shipping-cart-main .shipping-container form#shipping-form .address-shipping .region .feild select,
+.shipping-cart-main .shipping-container form#shipping-form .address-shipping .region .feild button,
+.shipping-cart-main #credit-card .feild input,
+.shipping-cart-main #credit-card .ex .select-date select,
+#secure {
+    padding: 8px 20px;
+    width: 100%;
+    background-color: var(--bg-color);
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .feild,
+.shipping-cart-main #credit-card .ex .select-date select,
+#secure  {
+    width: 48%;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .feild button {
+    width: 100%;
+    padding: 8px 10px;
+    text-align: right;
+    color: var(--black-color);
+}
+.shipping-cart-main .shipping-container form .address-shipping .region .feild .countries button {
+    margin-bottom: 0 !important;
+
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .feild {
+    position: relative;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .feild button i {
+    float: left;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .countries,
+.shipping-cart-main .shipping-container form .address-shipping .region .cities {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 0 15px var(--bg-color);
+    padding: 0;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .countries img {
+    width: 30px;
+    height: 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .countries .country,
+.shipping-cart-main .shipping-container form .address-shipping .region .cities .country {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color) !important;
+}
+
+.shipping-cart-main .shipping-container form .address-shipping .region .countries .country:hover,
+.shipping-cart-main .shipping-container form .address-shipping .region .cities .country:hover {
+    background-color: var(--bg-color) !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.shipping-cart-main .shipping-container form .cards label {
+    margin-bottom: 0;
+}
+
+.shipping-cart-main .shipping-container form .cards .feild {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.shipping-cart-main .shipping-container form .cards input {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.shipping-cart-main .shipping-container form .cards span {
+    display: block;
+    color: var(--gray-color);
+    font-size: 14px;
+}
+
+.shipping-cart-main .shipping-container form .card-name .payment-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shipping-cart-main .shipping-container form .card-name .payment-cards .feild {
+    min-width: 30%;
+    padding: 6px 10px;
+    border: 1px solid var(--bg-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin: 10px 0;
+}
+
+.shipping-cart-main .shipping-container form .card-name .payment-cards img {
+    width: 35px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.shipping-cart-main .shipping-container form .card-name .payment-cards label {
+    margin-bottom: 0;
+}
+
+.shipping-cart-main .shipping-container #order-table .order-table-div{
+    padding: 20px 15px 0;
+    background-color: var(--bg-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin: auto;
+}
+
+.shipping-cart-main .shipping-container #order-table tbody {
+    position: relative;
+}
+
+.shipping-cart-main .shipping-container #order-table tbody::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #c8c8c8;
+}
+
+.shipping-cart-main .shipping-container #order-table tbody::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #c8c8c8;
+}
+
+.shipping-cart-main .shipping-container #order-table tr td {
+    padding: 10px;
+}
+
+.shipping-cart-main .shipping-container #order-table tr td:last-child {
+    text-align: left;
+}
+
+.shipping-cart-main .shipping-container .col {
+    text-align: right !important;
+}
+
+.shipping-cart-main .shipping-container #order-table tbody input,
+.shipping-cart-main .shipping-container #order-table tbody button {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.shipping-cart-main .shipping-container #order-table tbody .coboun {
+    position: relative;
+}
+
+.shipping-cart-main .shipping-container #order-table tbody button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 2px 10px;
+    border: none;
+    outline: none;
+    z-index: 1;
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.shipping-cart-main .shipping-container #order-table tbody input {
+    padding: 4px 10px;
+    border: 1px solid var(--bg-color);
+    outline: none;
+    width: 100%;
+}
+
+
+.shipping-cart-main .shipping-container  #order-table tfoot td {
+    font-weight: bold;
+}
+.shipping-cart-main .shipping-container #order-submit{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: var(--main-color);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.shipping-cart-main .shipping-container #order-submit a{
+    min-width: 30%;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--white-color);
+}
+
+.shipping-cart-main #credit-card {
+    display: none;
+}
+
+
+.shipping-cart-main #credit-card .ex .select-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shipping-cart-main #credit-card .feild label {
+    display: block;
+}
+
+.shipping-cart-main #credit-card .feild input {
+    width: 100%;
+}
+
+#countries,
+#cities {
+    position: absolute;
+    z-index: 2;
+    background-color: var(--white-color);
+    bottom: -180px;
+    display: none;
+}
+@media (max-width:991px) {
+    #order-table{
+        margin-top: 20px;
+    }
+}
